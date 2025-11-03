@@ -22,9 +22,14 @@ const getStringLengths = (strings) => {
 console.log(getStringLengths(sampleWords));
 // Problem 3
 const sortWordsZtoA = (words) => {
-
+  words.sort((a, b) => {
+    if (a < b) return 1;
+    if (a > b) return -1;
+    return 0;
+  });
 };
-
+sortWordsZtoA(sampleWords);
+console.log(sampleWords);
 /* -------------------------------------------- */
 /* --------------NUMBER PROBLEMS--------------- */
 /* -------------------------------------------- */
